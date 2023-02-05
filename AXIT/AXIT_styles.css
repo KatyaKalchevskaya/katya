@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+h1,h2.h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+*,
+*:after,
+*::before{
+    box-sizing: border-box;
+}
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1490px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    /*padding: 20px 50px;*/
+    position: relative;
+    background-color: #000000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content:space-between
+}
+.header__logo {
+    
+}
+
+
+/* Nav */
+
+.nav {
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.nav__link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0 30px;
+    transition:  0.1s linear;
+}
+
+/*.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background-color:  white;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}*/ /* не получилось */
+
+.nav__link:hover{
+    background-color:#EC7979;
+}
+.nav__link:active{
+    background-color: #AB4949;
+}
+/* Section */
+
+.section {
+   width: 100%;
+   max-height: 1020px;
+   background: url(./AXIT_images/Modern/modern_bg.png) center no-repeat;
+   background-size: cover;
+}
+
+/* Modern */
+
+
+.modern {
+    width: 100%;
+    padding-top: 150px;
+    margin:  0 80px;
+    
+
+    display: flex;
+    justify-content: space-around;
+
+}
+.modern__item {
+    width: 50%;
+    
+  
+}
+
+.modern__suptitle {
+    padding-top: 70px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hr{
+    border: 1px solid #FFFFFF;
+    width: 170px;
+    height: 0;
+    background-color: #FFFFFF;
+    margin:  30px 0;
+
+}
+.modern__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+/*.modern__suptitle::after{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 0;
+    margin: 0 auto ;
+    
+
+    border: 1px solid #FFFFFF;
+}*/ /* не получилось .узнать почему */
+
+.modern__btn {
+    width: 250px;
+    height: 48px;
+    margin: 40px auto;
+    border: 2px solid white;
+    background: transparent;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    transition: 0.5s linear;
+}
+.modern__btn:hover{
+    border-color: #EC7979;
+    color:#EC7979 ;
+    
+}
+.modern__btn:hover::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #EC7979;
+    width: 120px;
+    
+    
+}
+.modern__btn:active{
+    border-color: #AB4949;
+    color: #AB4949;
+}
+.modern__btn:active::after{
+    border:none;
+}
+
+
+
+
+
+/* Form */
+
+.form__form{
+    width: 50%;
+    
+}
+.form {
+    width: 350px;
+    max-height: 450px;
+    padding: 100px auto ;
+    display:block;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.form__title {
+
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+}
+span{
+    color: #EC7979;
+}
+
+.form__item {
+    width: 80%;
+    margin: 30px  20px;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+.form__btn{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    width: 100%;
+    height: 45px;
+    color: white;
+    background-color: #EC7979;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    transition: 0.5s linear;
+    cursor: pointer;
+    
+}
+.form__btn:hover{
+    background-color: #AB4949;
+}
+
+.form__btn:active{
+    background-color: #EC7979;
+}
