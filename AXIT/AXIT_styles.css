@@ -24,16 +24,26 @@ h1,h2.h3,h4,h5,h6{
     padding: 0 15px;
     margin: 0 auto;
 }
+.container--social{
+    background-color:  #F8EFEF;
+}
 
 .container--options{
     background-color: #f5f5f5;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .container--design{
-    background-color: #333333;
+    background: url(./AXIT_images/Design/design__bg.png) center no-repeat;
+   background-size: cover;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .container--footer{
     background-color: #000000;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -222,7 +232,8 @@ h1,h2.h3,h4,h5,h6{
     
 }
 .form {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     max-height: 450px;
     padding: 100px auto ;
     display:block;
@@ -291,12 +302,14 @@ span{
 
 
 .social{
-    display: flex;
+    max-width: 1510px;
     width: 100%;
+    margin: 0 auto;
+    display: flex;
     height: 100px ;
     padding: 20px 30px;
-    /*justify-content: space-between;*/
-    background-color:  #F8EFEF;
+    justify-content: space-between;
+    
 }
 
 .social_item{
@@ -321,11 +334,10 @@ span{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px; 
-     color: #86878B;
+    color: #86878B;
 }
 
 .social__emblem{
-    
     margin-left: 125px;
 }
 
@@ -387,9 +399,10 @@ span{
 
 
 .effect {
+    width: 100%;
     
     margin-top: 50px;
-    margin-left: 20%;
+    padding-left: 10%;
 
 }
 
@@ -397,7 +410,8 @@ span{
     display: flex;
     justify-content: center;
     height: 440px;
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     border: 1px solid  #C6CBCD;
     padding-left: 100px;
     padding-top: 0px;
@@ -870,3 +884,191 @@ span{
 
     color: rgba(255, 255, 255, 0.5);
 }
+
+@media(max-width:1310px){
+
+    /* Social */
+    .social__emblem{
+    
+        margin-left: 105px;
+    }
+
+    .social__icon{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+
+    /*Effect*/
+    .effect {
+        padding-left: 0;
+    
+    }
+
+
+    /*Options */
+
+    .options {
+        /*display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 100px;*/
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    .options__item--optima{
+       
+        top: -20px;
+        left: 0px;
+    }
+    
+
+}
+
+@media(max-width:910px){
+    /* Nav */
+    .nav{
+        display: none;
+    }
+
+    /*Modern*/
+    .modern__suptitle{
+        font-size: 38px;
+    }
+
+    /* Social */
+    
+    .social__emblem{
+       
+    
+        margin-left: 10px;
+    }
+
+    .social__title{
+        font-size: 18px;
+
+    }
+    .social__text{
+        font-size: 13px;
+    }
+
+    /* Effect */
+    .effect__text {
+        width: 100%;
+        
+        
+    }
+    .effect__card{
+        display: none;
+    }
+
+    /*Options*/
+    .options{
+        display: inline-block;
+        justify-content: center;
+       
+    }
+    .options__item{
+        width: 100%;
+        
+        
+    }
+    .options__item--optima{
+        position: none;
+        box-shadow: none;
+
+
+    }
+
+    /* Design */
+
+    .design__btn{
+        margin-left: 35%;
+        
+    }
+
+    /*Contact*/
+
+    .contact__form{
+        display: block;
+        justify-content: center;
+        padding: 0;
+    }
+
+}
+
+@media(max-width:510px){
+
+    /*Modern*/
+    
+    .modern__suptitle{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /* Social */
+    
+    .social{
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    .social__emblem{
+        padding-top: 30px;
+    }
+
+    /* Tabs */
+    .tabs__inset {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* Effect */
+
+    .effect__paragraph{
+        
+        display: block;
+        text-align: center;
+    }
+
+    .effect__text{
+        padding-top: 0;
+    }
+    .effect__title{
+        font-size: 20px;
+    }
+    .effect__subtitle{
+        font-size: 13px;
+    }
+
+    /* About */
+
+    .about{
+        display: block;
+    }
+    
+    /*Customers*/
+    .customers{
+        display: block;
+    }
+    
+    .customers__name{
+        font-size: 20px;
+
+    }
+    .customers__job{
+        font-size: 15px;
+    }
+
+    /* Design */
+
+    .design__btn{
+        margin-left: 25%;
+        
+    }
+
+
+    
+    
+}
+
+
